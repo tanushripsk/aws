@@ -36,7 +36,7 @@ app.use(bodyParser.json());
 // });
 
 mongoose.connect(
-  "mongodb://nagpurdial_nagpurdialpsk:2HUqJfIWlZ@157.173.119.93:27017/nagpurdial_NagpurDial1?authSource=admin",
+  "mongodb+srv://devtanushri22:H8C2fWrtSkTfyg3l@nagpurdial.0con4.mongodb.net/",
   {
     // useNewUrlParser: true,
     // useUnifiedTopology: true,
