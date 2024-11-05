@@ -15,7 +15,7 @@ function HotelsClient() {
     name: "",
     number: "",
   });
-  const host = "http://localhost:30000";
+  const host = "http://localhost:3000";
 
   const handleContactButtonClick = (contact) => {
     setSelectedContact(contact);

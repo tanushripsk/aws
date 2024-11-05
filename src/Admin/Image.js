@@ -92,7 +92,7 @@ const Image = () => {
         formData.append("pincode", pincode);
 
         try {
-            await axios.post("http://localhost:30000/freelisting ", formData, {
+            await axios.post("http://localhost:3000/freelisting ", formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

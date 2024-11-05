@@ -18,7 +18,7 @@ const LocationDetail = () => {
         //   "http://localhost:3000/api/location",
 
         const response = await axios.post(
-          "http://localhost:30000/api/location",
+          "http://localhost:3000/api/location",
           {
             locationsName: query,
           }

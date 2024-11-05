@@ -16,7 +16,7 @@ const SearchResults = () => {
   useEffect(() => {
     const fetchLocations = async () => {
       try {
-        const response = await axios.post("http://localhost:30000/api/search", {
+        const response = await axios.post("http://localhost:3000/api/search", {
           locationsName: query,
         });
         setLocations(response.data);

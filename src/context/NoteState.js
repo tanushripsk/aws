@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NoteContext from "./noteContext1";
 
 const NoteState = (props) => {
-  const host = "http://localhost:30000";
+  const host = "http://localhost:3000";
   const notesInitial = [];
   const [notes, setNotes] = useState(notesInitial);
 

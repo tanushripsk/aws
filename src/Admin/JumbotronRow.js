@@ -11,7 +11,7 @@ const JumbotronRow = () => {
         number: "",
     });
     const navigate = useNavigate();
-    const host = "http://localhost:30000";
+    const host = "http://localhost:3000";
 
     const handleSubmit = async (e) => {
         e.preventDefault();
