@@ -38,7 +38,7 @@ function Advertise({ data }) {
 
     try {
       console.log("Submitting data:", credential); 
-      const response = await axios.post('http://43.204.220.28:30001/api/auth/advertise', credential);
+      const response = await axios.post('http://3.109.3.16:30001/api/auth/advertise', credential);
 
       // Check if the response status is 200 (OK)
       if (response.status === 200) {

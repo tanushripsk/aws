@@ -14,18 +14,16 @@ const app = express();
 
 // Ensure the uploads directory exists
 const uploadDir = path.join(__dirname, "freelisting");
-if (!fs.existsSync(uploadDir)) { 
+if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir);
 }
 
-// Middleware
 // Middleware
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "../build")));
 
 // MongoDB Connection with error handling
-// const mongoURI ="mongodb://nagpurdial_nagpurdialpsk:2HUqJfIWlZ@157.173.119.93:27017/nagpurdial_NagpurDial1?authSource=admin";
 const mongoURI ="mongodb+srv://tanushridhote22:LugVPIN5hasdUIUN@nagpudial.ncvp3.mongodb.net/";
 mongoose
   .connect(mongoURI)
@@ -94,6 +92,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../build", "index.html"));
 });
 
+// Use the port specified in the environment variable or default to 30001
 const PORT = process.env.PORT || 30001;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Test server running on port ${PORT}`);
