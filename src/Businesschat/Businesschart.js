@@ -40,7 +40,7 @@ function Businesschat({ data }) {
       console.log("Submitting data:", credential); // Log data for debugging
 
       // Send data to the backend via Axios POST request
-      const response = await axios.post('http://13.233.116.158:30001/api/auth/businesschat', credential);
+      const response = await axios.post('http://13.200.243.235:30001/api/auth/businesschat', credential);
 
       // Check if the response status is 200 (OK)
       if (response.status === 200) {
