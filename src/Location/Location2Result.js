@@ -16,7 +16,7 @@ const Location2Result = () => {
       try {
        
         const response = await axios.post(
-          "http://13.201.57.115:30001/api/location",
+          "http://3.110.56.182:30001/api/location",
           {
             locationsName: query,
           }
