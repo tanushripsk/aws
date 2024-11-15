@@ -77,7 +77,7 @@ function ImageForm({ number }) {
 
     setLoading(true); // Start loading
     try {
-      await axios.post("http://3.110.156.218:30001/api/fileUpload/freelisting", formData, {
+      await axios.post("http://15.206.82.37:30001/api/fileUpload/freelisting", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
