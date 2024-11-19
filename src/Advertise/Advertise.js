@@ -95,7 +95,7 @@ function Advertise({ data }) {
             </div>
           </div>
 
-          <br />
+          <br/>
           
           <div className="row mx-2">
             <div className="col-12">
