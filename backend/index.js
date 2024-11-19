@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "../build")));
 
 // MongoDB Connection with error handling
-const mongoURI ="mongodb+srv://tanushridhote22:LugVPIN5hasdUIUN@nagpudial.ncvp3.mongodb.net/";
+const mongoURI ="mongodb://nagpurdial_nagpuruser:BcCFlsYpDwW@157.173.119.93:27017/nagpurdial_nagpurdb?authSource=admin";
 
 //const mongoURI = "mongodb://nagpurdial_nagpurdialpsk:2HUqJfIWlZ@157.173.119.93:27017/nagpurdial_NagpurDial1?authSource=admin"
 mongoose
